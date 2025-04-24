@@ -45,7 +45,12 @@ const t_btn = document.querySelector('.top-btn');
 
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
-  t_btn.classList.toggle('act', scrollTop >= 900);
+  t_btn.classList.toggle('act', scrollTop >= 300); // ← 원하는 위치 조절 (ex. 300px부터 보여짐)
+});
+
+// 클릭 시 맨 위로 부드럽게 스크롤
+t_btn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 

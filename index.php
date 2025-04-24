@@ -124,30 +124,28 @@
   <section class="notice__section inner">
     <h2 class="hide">공지사항과 제휴배너</h2>
     <div class="notice__box">
-      <div>
-        <div class="notice__title">NOTICE</div>
-        <span>
-          <a href="javascript:void(0);"><img src="./images/icon_more.png" alt="더보기"></a>
-        </span>
-        <ul>
-          <li>
-            <a href="javascript:void(0);">피자알볼로 홈페이지 리뉴얼 안내</a>
-            <span>2025.12.10</span>
-          </li>
-          <li>
-            <a href="javascript:void(0);">신메뉴 출시 기념 이벤트 안내</a>
-            <span>2025.11.01</span>
-          </li>
-          <li>
-            <a href="javascript:void(0);">가맹점 모집 설명회</a>
-            <span>2025.10.15</span>
-          </li>
-          <li>
-            <a href="javascript:void(0);">배달 운영 관련 공지사항</a>
-            <span>2025.10.15</span>
-          </li>
-        </ul>
-      </div>
+      <div class="notice__title">NOTICE</div>
+      <span>
+        <a href="javascript:void(0);"><img src="./images/icon_more.png" alt="더보기"></a>
+      </span>
+      <ul>
+        <li>
+          <a href="javascript:void(0);">피자알볼로 홈페이지 리뉴얼 안내</a>
+          <span>2025.12.10</span>
+        </li>
+        <li>
+          <a href="javascript:void(0);">신메뉴 출시 기념 이벤트 안내</a>
+          <span>2025.11.01</span>
+        </li>
+        <li>
+          <a href="javascript:void(0);">가맹점 모집 설명회</a>
+          <span>2025.10.15</span>
+        </li>
+        <li>
+          <a href="javascript:void(0);">배달 운영 관련 공지사항</a>
+          <span>2025.10.15</span>
+        </li>
+      </ul>
     </div>
     <a href="javascript:void(0);" class="banner__01">
       <img src="./images/banner_1.png" alt="제휴 배너 이미지">
