@@ -101,24 +101,22 @@
   </section>
 
   <!-- 3. 인기메뉴 -->
-  <section class="best__section inner">
+  <section class="best__section">
     <h2 class="best__title">베스트 인기메뉴</h2>
-    <div class="best__menu swiper">
+    <div class="best__menu swiper inner">
       <div class="swiper-wrapper">
         <?php for ($i = 1; $i <= 8; $i++): ?>
         <div class="swiper-slide">
-          <a href="javascript:void(0);">
-            <img src="./images/good.png" alt="추천" class="icon-good">
-            <img src="./images/best_<?= $i ?>.png" alt="인기메뉴 <?= $i ?>" class="pizza">
+          <a href="javascript:void(0);">            <img src="./images/best_<?= $i ?>.png" alt="인기메뉴 <?= $i ?>" class="pizza">
             <p>메뉴 <?= $i ?></p>
           </a>
         </div>
         <?php endfor; ?>
       </div>
-    </div>
-    <div class="swiper-btn">
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-btn">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
   </section>
 
@@ -132,21 +130,36 @@
           <a href="javascript:void(0);"><img src="./images/icon_more.png" alt="더보기"></a>
         </span>
         <ul>
-          <li>피자알볼로 홈페이지 리뉴얼 안내<span>2024.12.10</span></li>
-          <li>신메뉴 출시 기념 이벤트 안내<span>2024.11.01</span></li>
-          <li>가맹점 모집 설명회<span>2024.10.15</span></li>
+          <li>
+            <a href="javascript:void(0);">피자알볼로 홈페이지 리뉴얼 안내</a>
+            <span>2025.12.10</span>
+          </li>
+          <li>
+            <a href="javascript:void(0);">신메뉴 출시 기념 이벤트 안내</a>
+            <span>2025.11.01</span>
+          </li>
+          <li>
+            <a href="javascript:void(0);">가맹점 모집 설명회</a>
+            <span>2025.10.15</span>
+          </li>
+          <li>
+            <a href="javascript:void(0);">배달 운영 관련 공지사항</a>
+            <span>2025.10.15</span>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="banner__01">
+    <a href="javascript:void(0);" class="banner__01">
       <img src="./images/banner_1.png" alt="제휴 배너 이미지">
-      <span><a href="#">자세히 보기</a></span>
-    </div>
+    </a>
   </section>
 
   <!-- 5. 이벤트 -->
   <section class="event__section inner">
-    <h2 class="event__head">EVENT <span>더보기</span></h2>
+    <h2 class="event__head">EVENT</h2>
+    <a href="javascript:void(0);">
+      <span>자세히 보기</span>
+    </a>
     <div class="event__total-box">
       <div class="event__box">
         <?php for ($i = 1; $i <= 5; $i++): ?>
@@ -164,13 +177,7 @@
       </div>
     </div>
   </section>
-
-
 </main>
-
-
-
-
   <?php include('./inc/footer.php'); ?>
 </body>
 </html>

@@ -3,7 +3,7 @@
     <div class="footer__area">
       <div class="footer__logo">
         <img src="./images/logo.png" alt="로고이미지">
-        <span class="footer__tel">1688-8495</span>
+        <span class="footer__tel">1234-1234</span>
       </div>
 
       <ul class="footer__contact">
@@ -16,9 +16,9 @@
       </ul>
 
       <div class="footer__info">
-        <p>법인명 : ㈜ALVOLO F&C&nbsp;&nbsp;|&nbsp;&nbsp;대표자 : 이재욱&nbsp;&nbsp;|&nbsp;&nbsp;사업자번호 : 117-81-73358</p>
-        <p>통신판매번호 : 제2015-서울양천-0524호&nbsp;&nbsp;|&nbsp;&nbsp;서울시 양천구 목동로 232</p>
-        <p>전화 : 02-2645-8495&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-2604-5171</p><br>
+        <p>법인명 : ㈜ALVOLO F&C&nbsp;&nbsp;|&nbsp;&nbsp;대표자 : 홍길동&nbsp;&nbsp;|&nbsp;&nbsp;사업자번호 : 123-45-67890</p>
+        <p>통신판매번호 : 제2024-서울마포-0001호&nbsp;&nbsp;|&nbsp;&nbsp;서울특별시 마포구 와우산로 123</p>
+        <p>전화 : 02-1234-5678&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-8765-4321</p><br>
         <p>Copyright ⓒ Pizza Alvolo All rights reserved.</p>
       </div>
 

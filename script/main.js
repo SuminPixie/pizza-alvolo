@@ -30,9 +30,9 @@ playPauseBtn.addEventListener("click", () => {
 
 
 // ------------------ 인기 메뉴 슬라이드 ------------------
-const swiper2 = new Swiper(".best-menu__swiper", {
+const swiper2 = new Swiper(".best__menu", {
   slidesPerView: 4,
-  spaceBetween: 60,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

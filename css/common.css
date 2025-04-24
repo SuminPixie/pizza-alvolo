@@ -1,18 +1,13 @@
 @charset "utf-8";
 
-/* 기본스타일 3가지(폰트, 색상, 링크) */
-
-
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
-/* @font-face {
-  font-family: 'SpoqaHanSansNeo-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
+/* ========== 공통 스타일 ========== */
+html,
+body {
+  scroll-behavior: smooth;
+}
 body{
   font-family: "SpoqaHanSansNeo-Regular", sans-serif, arial;
   color: #222;
@@ -22,10 +17,224 @@ a{
   color: #222;
   text-decoration: none;
 }
+.inner {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.hide{
+  display: none;
+}
 
-
-
-/* 마크업 수정사항 */
-#order > h2{display: none;}
-#notice > h2{display: none;}
-#event > h2{display: none;}
+/* ========== 헤더 영역 ========== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 2000;
+  transition: height 0.4s ease;
+  overflow: hidden;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+.header__box h1 {
+  display: inline-block;
+  margin-top: 30px;
+}
+.header__box h1 a {
+  display: inline-block;
+  height: 60px;
+}
+.header__box h1 img {
+  height: 100%;
+}
+/* 로그인/회원가입 */
+.header__top-lnb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__top-lnb>ul {
+  display: flex;
+}
+.header__top-lnb>ul>li {
+  padding: 10px;
+  margin: auto 0;
+  color: #ccc;
+}
+.header__top-lnb>ul>li>a {
+  color: #666;
+}
+.header__top-lnb img {
+  width: 40px;
+}
+/* 내비게이션 */
+.gnb__box {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  top: 34px;
+  z-index: 10;
+  transition: 0.4s ease;
+}
+.gnb {
+  background-color: white;
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+}
+.gnb__menu {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.gnb__menu>li {
+  line-height: 50px;
+  width: 100%;
+  white-space: nowrap;
+}
+.gnb__menu>li>a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+.gnb__menu>li>a:first-child:hover {
+  color: #222;
+}
+.gnb__menu li a:hover {
+  color: #F9423A;
+}
+.gnb__sub {
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+header:hover .gnb__sub {
+  opacity: 1;
+}
+.gnb__indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F9423A;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+/* ========== 푸터 영역 ========== */
+.footer__section {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  margin-top: 100px;
+  border-top: 1px solid #ccc;
+}
+.footer__area {
+  position: relative;
+  width: 1260px;
+  padding: 52px 0;
+  margin: 0 auto;
+}
+.footer__logo img {
+  width: 100px;
+  transform: translateY(-12px);
+  vertical-align: top;
+}
+.footer__tel {
+  margin-left: 13px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.footer__contact {
+  margin-top: 15px;
+}
+.footer__contact li {
+  display: inline-block;
+}
+.footer__contact li a {
+  padding: 10px;
+  font-size: 16px;
+  color: #888;
+}
+.footer__contact li:first-child a {
+  padding-left: 0;
+}
+.footer__info {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.8;
+}
+.footer__info .footer__notice {
+  margin-top: 12px;
+}
+.footer__cont {
+  position: absolute;
+  right: 0;
+  width: 300px;
+}
+.app-box {
+  position: absolute;
+  top: -175px;
+  right: 0;
+  display: flex;
+  text-align: right;
+  color: #444;
+}
+.app-box dt {
+  font-size: 16px;
+  line-height: 24px;
+}
+.app-box a {
+  font-size: 24px;
+  padding: 6px;
+}
+.sns-box {
+  position: absolute;
+  right: 0;
+  top: -135px;
+}
+.sns-box ul {
+  display: table;
+  table-layout: fixed;
+  font-size: 24px;
+}
+.sns-box li {
+  display: table-cell;
+  padding-right: 10px;
+}
+.sns-box a {
+  color: #444;
+}
+.family-site {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  color: #666;
+  border: 1px solid #ccc;
+}
+/* ========== 탑 버튼 ========== */
+.top-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #666;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 3px #666;
+  z-index: 1000;
+}
