@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starbucks</title>
+  <title>Pizza Alvolo</title>
   <!-- favicon -->
   <link rel="icon" href="./images/favicon.png" type="image/x-icon">
   <!-- font-awesome -->
