@@ -168,7 +168,7 @@
             </div>
             <p class="event__on">진행중</p>
             <p class="event__title">이벤트 제목 <?= $i ?>입니다. 이 줄은 테스트 텍스트입니다.</p>
-            <p class="event__period">2024.04.01 ~ 2024.04.30</p>
+            <p class="event__period">2099.04.01 ~ 2099.04.30</p>
           </div>
         </div>
         <?php endfor; ?>
